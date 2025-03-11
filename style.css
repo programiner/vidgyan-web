@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    width: 90%;
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    animation: fadeInSlide 0.5s ease-in-out;
+}
+
+p {
+    font-size: 14px;
+    animation: fadeInSlide 0.5s ease-in-out;
+    color: #ccc;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ff0000;
+    background: #252525;
+    color: white;
+    animation: fadeInSlide 0.5s ease-in-out;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button {
+    width: 100%;
+    background: red;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    animation: fadeInSlide 0.5s ease-out;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #ff3333;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Progress Bar Styling */
+.progress-bar {
+    width: 100%;
+    background-color: #444;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.progress {
+    width: 0%;
+    height: 5px;
+    background-color: limegreen;
+    transition: width 2s ease-in-out;
+}
+
+#result {
+    margin-top: 15px;
+}
+
+#thumbnail {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#downloadLink {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    background: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#downloadLink:hover {
+    background: #00cc00;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+#videoTitle {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeInSlide {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

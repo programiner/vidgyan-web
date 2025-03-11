@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VidGyan Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="homepagetitle">🔻 VidGyan Web 🔻</h1>
+        <h1 class="homepagetitle"> Download YouTube Videos </h1>
+        <p>Paste the YouTube URL and select your resolution.</p>
+
+        <input type="text" id="videoUrl" placeholder="Enter YouTube URL">
+        <button onclick="fetchVideo()">Get Download Links</button>
+
+        <div id="progress-container" class="hidden">
+            <p>🔄 Fetching Video...</p>
+            <div class="progress-bar">
+                <div id="progress" class="progress"></div>
+            </div>
+        </div>
+
+        <div id="result" class="hidden">
+            <img id="thumbnail" src="" alt="Video Thumbnail">
+            <h3 id="videoTitle"></h3>
+            <select id="resolutionSelect"></select>
+            <button onclick="downloadVideo()">⬇ Download Video</button>
+                </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
